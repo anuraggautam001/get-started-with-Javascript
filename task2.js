@@ -1,3 +1,3 @@
-let name= prompt("What is your name?");
-confirm("your name is "+name);
-alert("fuck you "+name);
+let nm= prompt("What is your name?");
+~confirm("your name is "+nm);
+alert("fuck you "+nm);
