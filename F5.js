@@ -13,3 +13,17 @@ function showMe(){
     }
     alert("items selected "+ items);
 }
+
+
+function printItems(){
+    var x=document.getElementsByTagName("input");
+    var bool=true;
+    for(var i=0;i<x.length;i++){
+        if(!x[i].checked){
+            bool=false;
+            break;
+        }
+    }
+    if(!bool){
+   alert("Please select all items");}
+}
