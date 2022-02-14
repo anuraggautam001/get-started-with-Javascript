@@ -21,3 +21,26 @@ function validate(){
     alert("All Data Validated");
     return true;
 }
+
+
+
+function checkRadio(){
+    var x= document.getElementsByName("gender");
+    for(var i=0;i<x.length;i++){
+        if(x[i].checked){
+            return true;
+        }
+    }
+    alert("Please select Gender");
+    return false;
+}
+
+function checkSelectBox(){
+    var x= document.myform.country;
+    if(x.selectedIndex==0){
+        alert("Please Select Country");
+        return false;
+    }
+    alert(x.value);
+    return true;
+}

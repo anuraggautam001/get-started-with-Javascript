@@ -10,10 +10,29 @@
 <body>
     <h1>Take a view on Validations</h1><br><br><br>
     <form action="" onsubmit="return validate()">
-     <h3>form entries validation</h3>   
+     <h3>Form entries validation</h3>   
      Name: <input type="text" id="name"><br>
      Mobile: <input type="text" id="number"><br>
      <input type="submit" value="submit">
+    </form><br><br>
+    <form action="">
+        <h3>Radio Button Validation</h3>
+        Male: <input type="radio" name="gender" value="Male">
+        Female: <input type="radio" name="gender" value="Female">
+        Others: <input type="radio" name="gender" value="Others">
+        <input type="submit" onclick="return checkRadio()">
+    </form><br><br><br>
+
+    <form action="" name="myform">
+        <h3>SelectBox Validation</h3><br>
+        Country: <select name="country">
+                 <option value="">Select</option>
+                 <option value="India">India</option>
+                 <option value="France">France</option>
+                 <option value="Italy">Italy</option>
+        </select><br>
+        <input type="submit" onclick="return checkSelectBox()">
+
     </form>
 </body>
 </html>
